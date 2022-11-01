@@ -1,0 +1,24 @@
+{
+  "config": {
+  "chainId": 143,
+  "homesteadBlock": 0,
+  "eip150Block": 0,
+  "eip155Block": 0,
+  "eip158Block": 0
+  },
+  "alloc": {},
+  "difficulty" : "0x20000",
+  "gasLimit"   : "0x8880000"
+  }
+
+  // geth --port 3000 --networkid 58343 --allow-insecure-unlock --nodiscover --datadir=./blockchain --maxpeers=0 --http --http.port 8543 --http.corsdomain '*' --http.api "eth,net,web3,personal,miner"
+  // geth attach http://127.0.0.1:8543
+
+  // personal.newAccount("seed 1")
+  // personal.unlockAccount("0x1d43fac70f3471bc2f8af3784f251bf738321616", "seed 1", 15000)
+  // eth.defaultAccount = eth.accounts[2]
+  // miner.setEtherbase(eth.accounts[2])
+  // miner.start(1)
+
+  // Deploy smartcontract
+  // truffle migrate

@@ -22,3 +22,37 @@
 
   // Deploy smartcontract
   // truffle migrate
+
+
+//   Starting migrations...
+// ======================
+// > Network name:    'development'
+// > Network id:      58343
+// > Block gas limit: 98643302 (0x5e12d66)
+
+
+// 2_deploy_contracts.js
+// =====================
+
+//    Deploying 'Bank'
+//    ----------------
+//    > transaction hash:    0x68af669fea1a73e320c66c55a44b7bf384e24552c47ac319d56ba10c90bf8ae2
+//    > Blocks: 1            Seconds: 20
+//    > contract address:    0xB4e5953FF3BB7780d528B9CFE8C4D77691CF8f28
+//    > block number:        382
+//    > block timestamp:     1667311053
+//    > account:             0x1d43faC70f3471bC2f8aF3784F251bF738321616
+//    > balance:             240
+//    > gas used:            292962 (0x47862)
+//    > gas price:           1 gwei
+//    > value sent:          0 ETH
+//    > total cost:          0.000292962 ETH
+
+//    > Saving artifacts
+//    -------------------------------------
+//    > Total cost:         0.000292962 ETH
+
+// Summary
+// =======
+// > Total deployments:   1
+// > Final cost:          0.000292962 ETH

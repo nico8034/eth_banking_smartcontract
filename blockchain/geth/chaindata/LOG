@@ -60,3 +60,23 @@
 14:42:00.220756 db@open done T·18.5972ms
 15:29:31.534460 db@close closing
 15:29:31.535151 db@close done T·691.6µs
+=============== Nov 1, 2022 (CET) ===============
+22:45:49.806308 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:45:49.815311 version@stat F·[3] S·168KiB[168KiB] Sc·[0.75]
+22:45:49.815311 db@open opening
+22:45:49.815311 journal@recovery F·1
+22:45:49.818307 journal@recovery recovering @13
+22:45:49.838285 memdb@flush created L0@15 N·6279 S·331KiB "\x16\x89\xae..k>\xf2,v9320":"\xf0o\xe4..2?7,v9318"
+22:45:49.843239 version@stat F·[4] S·499KiB[499KiB] Sc·[1.00]
+22:45:49.851380 db@janitor F·6 G·0
+22:45:49.851380 db@open done T·36.0681ms
+22:45:49.851380 table@compaction L0·4 -> L1·0 S·499KiB Q·9325
+22:45:49.872760 table@build created L1@18 N·6205 S·360KiB "\x16\x89\xae..k>\xf2,v9320":"\xf0o\xe4..2?7,v9318"
+22:45:49.872760 version@stat F·[0 1] S·360KiB[0B 360KiB] Sc·[0.00 0.00]
+22:45:49.874578 table@compaction committed F-3 S-138KiB Ke·0 D·3116 T·23.1985ms
+22:45:49.874578 table@remove removed @12
+22:45:49.875090 table@remove removed @9
+22:45:49.875640 table@remove removed @6
+=============== Nov 2, 2022 (CET) ===============
+00:26:39.168813 db@close closing
+00:26:39.169370 db@close done T·557µs

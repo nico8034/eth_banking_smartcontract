@@ -5,34 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sample Dapp</title>
+  <title>Bank Dapp</title>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<h2>Hello World Ethereum Dapp</h2>
 
-<body>
-  <div>
-    <div class="container">
-      <label for="username" class="col-lg-2 control-label">Enter your name :</label>
-      <input id="username" type="text" />
+<body class="mAuto w100">
+  <div class="wrapper mAuto border flex-col j-center">
+    <h2>Ethereum bank Dapp</h2>
+    <div class="flex-col">
+      <button style="width: 150px;" onclick="createAccount()">Create Eth address</button>
+      <div class="flex">
+        <p>Account: </p>
+        <p id="accountName"></p>
+      </div>
     </div>
-    <div>
-      <button id="setName">Save Name</button>
-      <button id="getName">Get Name</button>
+    <div class="flex">
+      <p>Balance:</p>
+      <p id="accountBalance"></p>
+    </div>
+    <div class="flex-col">
+      <p>Amount to transfer:</p>
+      <input style="width: 100px;" type="number">
+      <button style="width: 120px;" onclick="helloWorld()">Send</button>
+      <button style="width: 120px;" onclick="getAccounts()">Get Accounts</button>
+    </div>
+    <div class="flex-col">
+      <p>Get Balance of account:</p>
+      <input style="width: 175px;" id="addressInput" type="text">
+      <button style="width: 120px;" onclick="getBalanceOfAccount()">Get balance</button>
+      <p id="balanceForAddress"></p>
+    </div>
+    <div class="flex-col">
+      <p>Get deployed contract</p>
+      <button style="width: 120px;" onclick="deployedContract()">Get info</button>
     </div>
   </div>
-  <div class="container">
-    <div><label class="center-label" for="output">OUTPUT --> </label>
-      <div id="output">None</div>
-    </div>
-  </div>
-  <div class="container">
-    <div><label class="center-label" for="errorHolder">ERROR --> </label>
-      <div id="errorHolder">None</div>
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="dist/bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+
+
 </body>
 
 </html>
